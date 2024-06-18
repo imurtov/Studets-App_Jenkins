@@ -13,6 +13,12 @@ pipeline{
                 bat 'npm audit'
             }
         }
+        stage("Run Tests"){
+            steps{
+                echo "========executing C========"
+                bat 'npm test'
+            }
+        }
     }
 
 }
